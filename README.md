@@ -1,4 +1,4 @@
-# SpaceShip System
+# AURORA
 ### FIAP Global Solution 2026
 * Lucas Neves - RM: 572679
 ---
