@@ -44,7 +44,7 @@ function iniciarAnalise() {
         energiaStatus    =   "Nível de Energia Adequado";
     }
 
-    if (tempStatus === "Temperatura Normal" || callStatus === "Comunicação Estável" || energiaStatus === "Nível de Energia Adequado") {
+    if (tempStatus === "Temperatura Normal" && callStatus === "Comunicação Estável" && energiaStatus === "Nível de Energia Adequado") {
         saida.innerHTML  +=  "Todos os sistemas operando dentro dos parâmetros normais. Monitoramento contínuo em andamento.<br>";
     }
 
@@ -65,7 +65,7 @@ function statusNave() {
         return;
     }
     
-    if (tempStatus === "Alerta de Superaquecimento!!!" || callStatus === "Falha na Comunicação!!!" || energiaStatus === "Alerta de Baixa Energia!!!") {
+    if (tempStatus === "Alerta de Superaquecimento!!!" && callStatus === "Falha na Comunicação!!!" && energiaStatus === "Alerta de Baixa Energia!!!") {
         saida.innerHTML = "Status da Nave: ALERTA<br>" +
                             "FALHA DETECTADA!<br><BR>" +
                             tempStatus + "<br>" +
